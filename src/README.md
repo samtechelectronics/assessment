@@ -1,5 +1,5 @@
 
-// local deployment proceedures for this applicatio
+// local deployment proceedures for this application
 
 // clone the application form github
 
@@ -34,4 +34,15 @@ php artisan db:seed
 
 php artisan serve
 
+
+
+// Design thought 
+
+The application was designed with scalability in mind.
+Making it easy to modify the system at anytime.
+A seperate game version table was created to make game version modification easy
+for the game play it is grouped into single or multiple based on users playing the game.
+this is acompanied by a seperation game play players table that accounts for the players in each game.
+
+the script to populate the tables was all implemented in the database seeder of the the application to make deplayment easier.
 

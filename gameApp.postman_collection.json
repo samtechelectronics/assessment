@@ -1,0 +1,874 @@
+{
+	"info": {
+		"_postman_id": "45aae903-a9db-41a7-88ce-54f7d1602955",
+		"name": "gameApp Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"samueleke\",\n\t\"nickname\":\"samueleke\",\n\t\"email\": \"samueleke71@gmail.com\",\n\t\"password\": \"samuel2323\"\n} "
+				},
+				"url": {
+					"raw": "https://iconet.empireklassic.com/api/register",
+					"protocol": "https",
+					"host": [
+						"iconet",
+						"empireklassic",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"email\": \"samueleke71@gmail.com\",\n\t\"password\": \"samuel2323\"\n} "
+				},
+				"url": {
+					"raw": "https://iconet.empireklassic.com/api/login",
+					"protocol": "https",
+					"host": [
+						"iconet",
+						"empireklassic",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Games",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWIyMGVjNmM3ZDIyMjZlNDQ4MGUzYTcyMDYxM2FmZDIwM2VjMDkwOTg1ZDA3NjRmMjJlOTgwZTExNGQ3MTMxMzY4Y2RiMmU4YTIyYTNkZjkiLCJpYXQiOjE2MTA5NjgzNTEsIm5iZiI6MTYxMDk2ODM1MSwiZXhwIjoxNjQyNTA0MzUxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.vUwxbVwd00iijQj6f6oK75Q9RLAp1IY4zhi5dZqcJnK-FFmeh_uFjdwVLqgf0cF_9mwwfMdLidJ-B1Lo2FB8-qQyfQBFp3Hlj5wUlLJNwUbrprBLQ9BY2O84tMXrSzYhLgP1fA_8d9G5AXNFnZ7wUVC5FEIParfgdmycza-TxGdnlbJKP8b2LqjNh0QFjduWQsEsaI-rc9OeiYoN7UNp0MK9nc3MrMZT56IN6YaK5ug9w6lqJghTzeN9Fx1nRgKRbba5Y29HpTrTmusEbewXL0WGexTz3drRjrtc4zLUp6ChUEyD5gc96plE3iigzv-Q8orjIIndeApyIpA0qZjMRaGNgQ8rvM_hv0bbU8c0dOwYBZhadyMDx1dsG1rQAbhLUJ8VGnMBWaWzNQ8d_5bAMjQSc_rcuEpekG1yenFHyrpBWif47xy31qi8ju3o32xJ1krnRi0VRvNvGIFo_9JS-cgDkms0QGQ0w235rRmqOy4LHWEIyqWYjH6BRM-1Eu06Iw4FNYtwO5Bpf9RQkGS1u2GOuWizGIh96zD9p_fL2-ydjRdq3NfeterwM0IFrIRZW0RtwTnWGzplMz74gzlzridEWA4gL5BWvswMIrKP8Or72OXpRuzDPvvO5Xv7GfEJNkw0JsSV95bzECiOOttBLLnqynsuBJY3RNmkcbPyghI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"email\": \"samueleke71@gmail.com\",\n\t\"password\": \"samuel2323\"\n} "
+				},
+				"url": {
+					"raw": "https://iconet.empireklassic.com/api/games",
+					"protocol": "https",
+					"host": [
+						"iconet",
+						"empireklassic",
+						"com"
+					],
+					"path": [
+						"api",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Game",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWIyMGVjNmM3ZDIyMjZlNDQ4MGUzYTcyMDYxM2FmZDIwM2VjMDkwOTg1ZDA3NjRmMjJlOTgwZTExNGQ3MTMxMzY4Y2RiMmU4YTIyYTNkZjkiLCJpYXQiOjE2MTA5NjgzNTEsIm5iZiI6MTYxMDk2ODM1MSwiZXhwIjoxNjQyNTA0MzUxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.vUwxbVwd00iijQj6f6oK75Q9RLAp1IY4zhi5dZqcJnK-FFmeh_uFjdwVLqgf0cF_9mwwfMdLidJ-B1Lo2FB8-qQyfQBFp3Hlj5wUlLJNwUbrprBLQ9BY2O84tMXrSzYhLgP1fA_8d9G5AXNFnZ7wUVC5FEIParfgdmycza-TxGdnlbJKP8b2LqjNh0QFjduWQsEsaI-rc9OeiYoN7UNp0MK9nc3MrMZT56IN6YaK5ug9w6lqJghTzeN9Fx1nRgKRbba5Y29HpTrTmusEbewXL0WGexTz3drRjrtc4zLUp6ChUEyD5gc96plE3iigzv-Q8orjIIndeApyIpA0qZjMRaGNgQ8rvM_hv0bbU8c0dOwYBZhadyMDx1dsG1rQAbhLUJ8VGnMBWaWzNQ8d_5bAMjQSc_rcuEpekG1yenFHyrpBWif47xy31qi8ju3o32xJ1krnRi0VRvNvGIFo_9JS-cgDkms0QGQ0w235rRmqOy4LHWEIyqWYjH6BRM-1Eu06Iw4FNYtwO5Bpf9RQkGS1u2GOuWizGIh96zD9p_fL2-ydjRdq3NfeterwM0IFrIRZW0RtwTnWGzplMz74gzlzridEWA4gL5BWvswMIrKP8Or72OXpRuzDPvvO5Xv7GfEJNkw0JsSV95bzECiOOttBLLnqynsuBJY3RNmkcbPyghI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"name\": \"Paste\",\n} "
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/games",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Game",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWIyMGVjNmM3ZDIyMjZlNDQ4MGUzYTcyMDYxM2FmZDIwM2VjMDkwOTg1ZDA3NjRmMjJlOTgwZTExNGQ3MTMxMzY4Y2RiMmU4YTIyYTNkZjkiLCJpYXQiOjE2MTA5NjgzNTEsIm5iZiI6MTYxMDk2ODM1MSwiZXhwIjoxNjQyNTA0MzUxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.vUwxbVwd00iijQj6f6oK75Q9RLAp1IY4zhi5dZqcJnK-FFmeh_uFjdwVLqgf0cF_9mwwfMdLidJ-B1Lo2FB8-qQyfQBFp3Hlj5wUlLJNwUbrprBLQ9BY2O84tMXrSzYhLgP1fA_8d9G5AXNFnZ7wUVC5FEIParfgdmycza-TxGdnlbJKP8b2LqjNh0QFjduWQsEsaI-rc9OeiYoN7UNp0MK9nc3MrMZT56IN6YaK5ug9w6lqJghTzeN9Fx1nRgKRbba5Y29HpTrTmusEbewXL0WGexTz3drRjrtc4zLUp6ChUEyD5gc96plE3iigzv-Q8orjIIndeApyIpA0qZjMRaGNgQ8rvM_hv0bbU8c0dOwYBZhadyMDx1dsG1rQAbhLUJ8VGnMBWaWzNQ8d_5bAMjQSc_rcuEpekG1yenFHyrpBWif47xy31qi8ju3o32xJ1krnRi0VRvNvGIFo_9JS-cgDkms0QGQ0w235rRmqOy4LHWEIyqWYjH6BRM-1Eu06Iw4FNYtwO5Bpf9RQkGS1u2GOuWizGIh96zD9p_fL2-ydjRdq3NfeterwM0IFrIRZW0RtwTnWGzplMz74gzlzridEWA4gL5BWvswMIrKP8Or72OXpRuzDPvvO5Xv7GfEJNkw0JsSV95bzECiOOttBLLnqynsuBJY3RNmkcbPyghI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"name\": \"Pasteww\"\n} "
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/games/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"games",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Game",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWIyMGVjNmM3ZDIyMjZlNDQ4MGUzYTcyMDYxM2FmZDIwM2VjMDkwOTg1ZDA3NjRmMjJlOTgwZTExNGQ3MTMxMzY4Y2RiMmU4YTIyYTNkZjkiLCJpYXQiOjE2MTA5NjgzNTEsIm5iZiI6MTYxMDk2ODM1MSwiZXhwIjoxNjQyNTA0MzUxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.vUwxbVwd00iijQj6f6oK75Q9RLAp1IY4zhi5dZqcJnK-FFmeh_uFjdwVLqgf0cF_9mwwfMdLidJ-B1Lo2FB8-qQyfQBFp3Hlj5wUlLJNwUbrprBLQ9BY2O84tMXrSzYhLgP1fA_8d9G5AXNFnZ7wUVC5FEIParfgdmycza-TxGdnlbJKP8b2LqjNh0QFjduWQsEsaI-rc9OeiYoN7UNp0MK9nc3MrMZT56IN6YaK5ug9w6lqJghTzeN9Fx1nRgKRbba5Y29HpTrTmusEbewXL0WGexTz3drRjrtc4zLUp6ChUEyD5gc96plE3iigzv-Q8orjIIndeApyIpA0qZjMRaGNgQ8rvM_hv0bbU8c0dOwYBZhadyMDx1dsG1rQAbhLUJ8VGnMBWaWzNQ8d_5bAMjQSc_rcuEpekG1yenFHyrpBWif47xy31qi8ju3o32xJ1krnRi0VRvNvGIFo_9JS-cgDkms0QGQ0w235rRmqOy4LHWEIyqWYjH6BRM-1Eu06Iw4FNYtwO5Bpf9RQkGS1u2GOuWizGIh96zD9p_fL2-ydjRdq3NfeterwM0IFrIRZW0RtwTnWGzplMz74gzlzridEWA4gL5BWvswMIrKP8Or72OXpRuzDPvvO5Xv7GfEJNkw0JsSV95bzECiOOttBLLnqynsuBJY3RNmkcbPyghI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/games/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"games",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Game Version",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWIyMGVjNmM3ZDIyMjZlNDQ4MGUzYTcyMDYxM2FmZDIwM2VjMDkwOTg1ZDA3NjRmMjJlOTgwZTExNGQ3MTMxMzY4Y2RiMmU4YTIyYTNkZjkiLCJpYXQiOjE2MTA5NjgzNTEsIm5iZiI6MTYxMDk2ODM1MSwiZXhwIjoxNjQyNTA0MzUxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.vUwxbVwd00iijQj6f6oK75Q9RLAp1IY4zhi5dZqcJnK-FFmeh_uFjdwVLqgf0cF_9mwwfMdLidJ-B1Lo2FB8-qQyfQBFp3Hlj5wUlLJNwUbrprBLQ9BY2O84tMXrSzYhLgP1fA_8d9G5AXNFnZ7wUVC5FEIParfgdmycza-TxGdnlbJKP8b2LqjNh0QFjduWQsEsaI-rc9OeiYoN7UNp0MK9nc3MrMZT56IN6YaK5ug9w6lqJghTzeN9Fx1nRgKRbba5Y29HpTrTmusEbewXL0WGexTz3drRjrtc4zLUp6ChUEyD5gc96plE3iigzv-Q8orjIIndeApyIpA0qZjMRaGNgQ8rvM_hv0bbU8c0dOwYBZhadyMDx1dsG1rQAbhLUJ8VGnMBWaWzNQ8d_5bAMjQSc_rcuEpekG1yenFHyrpBWif47xy31qi8ju3o32xJ1krnRi0VRvNvGIFo_9JS-cgDkms0QGQ0w235rRmqOy4LHWEIyqWYjH6BRM-1Eu06Iw4FNYtwO5Bpf9RQkGS1u2GOuWizGIh96zD9p_fL2-ydjRdq3NfeterwM0IFrIRZW0RtwTnWGzplMz74gzlzridEWA4gL5BWvswMIrKP8Or72OXpRuzDPvvO5Xv7GfEJNkw0JsSV95bzECiOOttBLLnqynsuBJY3RNmkcbPyghI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"game_id\" : \"2\",\n    \"version_name\" : \"2002\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/game/addversion",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"game",
+						"addversion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit Game Version",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWIyMGVjNmM3ZDIyMjZlNDQ4MGUzYTcyMDYxM2FmZDIwM2VjMDkwOTg1ZDA3NjRmMjJlOTgwZTExNGQ3MTMxMzY4Y2RiMmU4YTIyYTNkZjkiLCJpYXQiOjE2MTA5NjgzNTEsIm5iZiI6MTYxMDk2ODM1MSwiZXhwIjoxNjQyNTA0MzUxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.vUwxbVwd00iijQj6f6oK75Q9RLAp1IY4zhi5dZqcJnK-FFmeh_uFjdwVLqgf0cF_9mwwfMdLidJ-B1Lo2FB8-qQyfQBFp3Hlj5wUlLJNwUbrprBLQ9BY2O84tMXrSzYhLgP1fA_8d9G5AXNFnZ7wUVC5FEIParfgdmycza-TxGdnlbJKP8b2LqjNh0QFjduWQsEsaI-rc9OeiYoN7UNp0MK9nc3MrMZT56IN6YaK5ug9w6lqJghTzeN9Fx1nRgKRbba5Y29HpTrTmusEbewXL0WGexTz3drRjrtc4zLUp6ChUEyD5gc96plE3iigzv-Q8orjIIndeApyIpA0qZjMRaGNgQ8rvM_hv0bbU8c0dOwYBZhadyMDx1dsG1rQAbhLUJ8VGnMBWaWzNQ8d_5bAMjQSc_rcuEpekG1yenFHyrpBWif47xy31qi8ju3o32xJ1krnRi0VRvNvGIFo_9JS-cgDkms0QGQ0w235rRmqOy4LHWEIyqWYjH6BRM-1Eu06Iw4FNYtwO5Bpf9RQkGS1u2GOuWizGIh96zD9p_fL2-ydjRdq3NfeterwM0IFrIRZW0RtwTnWGzplMz74gzlzridEWA4gL5BWvswMIrKP8Or72OXpRuzDPvvO5Xv7GfEJNkw0JsSV95bzECiOOttBLLnqynsuBJY3RNmkcbPyghI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"version_id\" : \"4\",\n    \"version_name\" : \"2002\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/game/editversion",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"game",
+						"editversion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Game Version",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiMWIyMGVjNmM3ZDIyMjZlNDQ4MGUzYTcyMDYxM2FmZDIwM2VjMDkwOTg1ZDA3NjRmMjJlOTgwZTExNGQ3MTMxMzY4Y2RiMmU4YTIyYTNkZjkiLCJpYXQiOjE2MTA5NjgzNTEsIm5iZiI6MTYxMDk2ODM1MSwiZXhwIjoxNjQyNTA0MzUxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.vUwxbVwd00iijQj6f6oK75Q9RLAp1IY4zhi5dZqcJnK-FFmeh_uFjdwVLqgf0cF_9mwwfMdLidJ-B1Lo2FB8-qQyfQBFp3Hlj5wUlLJNwUbrprBLQ9BY2O84tMXrSzYhLgP1fA_8d9G5AXNFnZ7wUVC5FEIParfgdmycza-TxGdnlbJKP8b2LqjNh0QFjduWQsEsaI-rc9OeiYoN7UNp0MK9nc3MrMZT56IN6YaK5ug9w6lqJghTzeN9Fx1nRgKRbba5Y29HpTrTmusEbewXL0WGexTz3drRjrtc4zLUp6ChUEyD5gc96plE3iigzv-Q8orjIIndeApyIpA0qZjMRaGNgQ8rvM_hv0bbU8c0dOwYBZhadyMDx1dsG1rQAbhLUJ8VGnMBWaWzNQ8d_5bAMjQSc_rcuEpekG1yenFHyrpBWif47xy31qi8ju3o32xJ1krnRi0VRvNvGIFo_9JS-cgDkms0QGQ0w235rRmqOy4LHWEIyqWYjH6BRM-1Eu06Iw4FNYtwO5Bpf9RQkGS1u2GOuWizGIh96zD9p_fL2-ydjRdq3NfeterwM0IFrIRZW0RtwTnWGzplMz74gzlzridEWA4gL5BWvswMIrKP8Or72OXpRuzDPvvO5Xv7GfEJNkw0JsSV95bzECiOOttBLLnqynsuBJY3RNmkcbPyghI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"version_id\" : \"4\",\n    \"version_name\" : \"2002\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/game/deleteversion/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"game",
+						"deleteversion",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Games",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZjM1NjAzZDhlNzBhMjUwMDA5NzMyNzFlYzZkYTJkN2NhZjQ3YzQ0NTdlYTE2ZTRjOGYxN2RiZmRiZmY1OTRiZWQ4ODIzMGY3MjE4YmM3ZGIiLCJpYXQiOjE2MTEwNTc1NzAsIm5iZiI6MTYxMTA1NzU3MCwiZXhwIjoxNjQyNTkzNTY5LCJzdWIiOiIxOCIsInNjb3BlcyI6W119.ga2LhAdDIES71gO3iVRQ9zR_NWaaoOVWCLCYhb5STRTL5cCSLVDuRLdeu_GJ8UPcbS6w7Fwz7y2aaYgREKCZGAiAEB0bR4RwpNTeElgQZEEprey-NKYDmq_FMLh9q-yqotnyaJobieD-Vz9wWlHa9J5I1smHURhGMaeAsTjjYEJhmDwjw65vD7NiWHp37ubw1Semb_vAsa_jK8Wf8wKmhUlrMwcNmhZvEEXqABseop8vTQK4ljjx78bxivrX7FR8L0G1sKqWE6nnBgchXPQXDGRnjW9djykEjSGZ5WGnZHlEpN-LIIufgwA_kqyT9hlEIcc-I0jGuw8MFjzWlvecbCprwgOc1y1uLe-N886wIGA7oDVhBHOhVmpgdww2Ml5D9_ZejPusJ0c3WsdcZKaMgIS9erbckdUzMffWK0frTCa1wBLvojN5tgqms_zGcuyIuU2UysS0FSZPadOpTMhYi2NfRWV5RBCThMSygGxh8kPfBbUKH3o33kD1-RM28n685B7XoDmkiaFR4ETB1O0Qj1x_9hei7mkmc86eNXcoX3eaiWXUOuxfiV4sIgD8hUqdIab5k_MUQfXK294TkU1IRgk_MKOUlWh_rM9eDLResfdOaSZcGZ5GZdM8sSXFNrzg2z3qjl7OlK_zz8zDXfwexpPtt_YxbV1ZLUtEwJo3DvE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"version_id\" : \"4\",\n    \"version_name\" : \"2002\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/games",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assign a Game to a User Games",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZTE0YzhmMWRmODRhNmU0ZDAxNjE3NDNjYTYxMjU5MmU1Mzg1MTA3NzQ1OTg1ZTE0OWQ4MTU0NGNjNGM4YzMwMWQ3MTI4OWVhODllZTlkNzkiLCJpYXQiOjE2MTA5ODc0MDgsIm5iZiI6MTYxMDk4NzQwOCwiZXhwIjoxNjQyNTIzNDA4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kJnOYPW5o0jlJCoxdkdPJcuw4ZX1NDmto6LJ87yjR-qxpo7XvpjnlNiI1pTFtnuV0FFoEYlI0N0qD7iibS1DpjVfiisxGmUUvyqbw5Y7EQeKi3_-n9pNLXsgF1OVSaAdg98lyMWbgF6FfRNr4ObNGMRX_hrl6nFVbVrT49G_OZDPxqBSqmHfcPuNtokz2-qP5RA7_UpXAbXwv5_tYmpj92UA_iWhaKtm4SQ2q-VM9g1lD09jDPomAl1jlegB59eRGw_TsS49CLZaoU58qyCVUzbYPrhgODsI3-LnifTLYy6uGAN2ZO540qq1k11qwHDen-mauPl7tXqejIYTQNLcCXE2VAZN1BaIqSbLfJPhinViXTAOqmDDI-ycA2frtk9J9LVUvmCj7dPNQ9qFm5XJj4Bb8cRhmUpG8_fc2kNPeNdOdgcBWhS9PPsC8c4HT8oOij5ybjLN1f6FWCdUigY6xB-Dyfrw3_qk5lQ5AQ65JDmhTPTcjOAH9W8yUVyTUzYmG-hRpYiR5PHn3NwnU_KoB3UeZMwiTScYOtTmeAPJV6KTP2IU_KAB2zxmZAkgtSAgfEfP1jeEmBbbEzdMOh23f-ScjQqGTJvjqYvEmshvwEmpeRmzO8puPZel46yqFrrMkjURtL_uIhVvFAolg6pL-ePPTFjqh0YB9bNdhuC1fIA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"game_id\" : \"1\",\n    \"version_id\" : \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/assigngame",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"assigngame"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Play a Game (single Player)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZTE0YzhmMWRmODRhNmU0ZDAxNjE3NDNjYTYxMjU5MmU1Mzg1MTA3NzQ1OTg1ZTE0OWQ4MTU0NGNjNGM4YzMwMWQ3MTI4OWVhODllZTlkNzkiLCJpYXQiOjE2MTA5ODc0MDgsIm5iZiI6MTYxMDk4NzQwOCwiZXhwIjoxNjQyNTIzNDA4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kJnOYPW5o0jlJCoxdkdPJcuw4ZX1NDmto6LJ87yjR-qxpo7XvpjnlNiI1pTFtnuV0FFoEYlI0N0qD7iibS1DpjVfiisxGmUUvyqbw5Y7EQeKi3_-n9pNLXsgF1OVSaAdg98lyMWbgF6FfRNr4ObNGMRX_hrl6nFVbVrT49G_OZDPxqBSqmHfcPuNtokz2-qP5RA7_UpXAbXwv5_tYmpj92UA_iWhaKtm4SQ2q-VM9g1lD09jDPomAl1jlegB59eRGw_TsS49CLZaoU58qyCVUzbYPrhgODsI3-LnifTLYy6uGAN2ZO540qq1k11qwHDen-mauPl7tXqejIYTQNLcCXE2VAZN1BaIqSbLfJPhinViXTAOqmDDI-ycA2frtk9J9LVUvmCj7dPNQ9qFm5XJj4Bb8cRhmUpG8_fc2kNPeNdOdgcBWhS9PPsC8c4HT8oOij5ybjLN1f6FWCdUigY6xB-Dyfrw3_qk5lQ5AQ65JDmhTPTcjOAH9W8yUVyTUzYmG-hRpYiR5PHn3NwnU_KoB3UeZMwiTScYOtTmeAPJV6KTP2IU_KAB2zxmZAkgtSAgfEfP1jeEmBbbEzdMOh23f-ScjQqGTJvjqYvEmshvwEmpeRmzO8puPZel46yqFrrMkjURtL_uIhVvFAolg6pL-ePPTFjqh0YB9bNdhuC1fIA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"game_id\" : \"1\",\n    \"version_id\" : \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/playgame/single",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"playgame",
+						"single"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Play a Game (multiple Players)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZTE0YzhmMWRmODRhNmU0ZDAxNjE3NDNjYTYxMjU5MmU1Mzg1MTA3NzQ1OTg1ZTE0OWQ4MTU0NGNjNGM4YzMwMWQ3MTI4OWVhODllZTlkNzkiLCJpYXQiOjE2MTA5ODc0MDgsIm5iZiI6MTYxMDk4NzQwOCwiZXhwIjoxNjQyNTIzNDA4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kJnOYPW5o0jlJCoxdkdPJcuw4ZX1NDmto6LJ87yjR-qxpo7XvpjnlNiI1pTFtnuV0FFoEYlI0N0qD7iibS1DpjVfiisxGmUUvyqbw5Y7EQeKi3_-n9pNLXsgF1OVSaAdg98lyMWbgF6FfRNr4ObNGMRX_hrl6nFVbVrT49G_OZDPxqBSqmHfcPuNtokz2-qP5RA7_UpXAbXwv5_tYmpj92UA_iWhaKtm4SQ2q-VM9g1lD09jDPomAl1jlegB59eRGw_TsS49CLZaoU58qyCVUzbYPrhgODsI3-LnifTLYy6uGAN2ZO540qq1k11qwHDen-mauPl7tXqejIYTQNLcCXE2VAZN1BaIqSbLfJPhinViXTAOqmDDI-ycA2frtk9J9LVUvmCj7dPNQ9qFm5XJj4Bb8cRhmUpG8_fc2kNPeNdOdgcBWhS9PPsC8c4HT8oOij5ybjLN1f6FWCdUigY6xB-Dyfrw3_qk5lQ5AQ65JDmhTPTcjOAH9W8yUVyTUzYmG-hRpYiR5PHn3NwnU_KoB3UeZMwiTScYOtTmeAPJV6KTP2IU_KAB2zxmZAkgtSAgfEfP1jeEmBbbEzdMOh23f-ScjQqGTJvjqYvEmshvwEmpeRmzO8puPZel46yqFrrMkjURtL_uIhVvFAolg6pL-ePPTFjqh0YB9bNdhuC1fIA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"game_id\" : \"1\",\n    \"version_id\" : \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/playgame/single",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"playgame",
+						"single"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Players Statistics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZjM1NjAzZDhlNzBhMjUwMDA5NzMyNzFlYzZkYTJkN2NhZjQ3YzQ0NTdlYTE2ZTRjOGYxN2RiZmRiZmY1OTRiZWQ4ODIzMGY3MjE4YmM3ZGIiLCJpYXQiOjE2MTEwNTc1NzAsIm5iZiI6MTYxMTA1NzU3MCwiZXhwIjoxNjQyNTkzNTY5LCJzdWIiOiIxOCIsInNjb3BlcyI6W119.ga2LhAdDIES71gO3iVRQ9zR_NWaaoOVWCLCYhb5STRTL5cCSLVDuRLdeu_GJ8UPcbS6w7Fwz7y2aaYgREKCZGAiAEB0bR4RwpNTeElgQZEEprey-NKYDmq_FMLh9q-yqotnyaJobieD-Vz9wWlHa9J5I1smHURhGMaeAsTjjYEJhmDwjw65vD7NiWHp37ubw1Semb_vAsa_jK8Wf8wKmhUlrMwcNmhZvEEXqABseop8vTQK4ljjx78bxivrX7FR8L0G1sKqWE6nnBgchXPQXDGRnjW9djykEjSGZ5WGnZHlEpN-LIIufgwA_kqyT9hlEIcc-I0jGuw8MFjzWlvecbCprwgOc1y1uLe-N886wIGA7oDVhBHOhVmpgdww2Ml5D9_ZejPusJ0c3WsdcZKaMgIS9erbckdUzMffWK0frTCa1wBLvojN5tgqms_zGcuyIuU2UysS0FSZPadOpTMhYi2NfRWV5RBCThMSygGxh8kPfBbUKH3o33kD1-RM28n685B7XoDmkiaFR4ETB1O0Qj1x_9hei7mkmc86eNXcoX3eaiWXUOuxfiV4sIgD8hUqdIab5k_MUQfXK294TkU1IRgk_MKOUlWh_rM9eDLResfdOaSZcGZ5GZdM8sSXFNrzg2z3qjl7OlK_zz8zDXfwexpPtt_YxbV1ZLUtEwJo3DvE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"version_id\" : \"4\",\n    \"version_name\" : \"2002\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/playersStatistics",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"playersStatistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Game play Statistics by Date",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZjM1NjAzZDhlNzBhMjUwMDA5NzMyNzFlYzZkYTJkN2NhZjQ3YzQ0NTdlYTE2ZTRjOGYxN2RiZmRiZmY1OTRiZWQ4ODIzMGY3MjE4YmM3ZGIiLCJpYXQiOjE2MTEwNTc1NzAsIm5iZiI6MTYxMTA1NzU3MCwiZXhwIjoxNjQyNTkzNTY5LCJzdWIiOiIxOCIsInNjb3BlcyI6W119.ga2LhAdDIES71gO3iVRQ9zR_NWaaoOVWCLCYhb5STRTL5cCSLVDuRLdeu_GJ8UPcbS6w7Fwz7y2aaYgREKCZGAiAEB0bR4RwpNTeElgQZEEprey-NKYDmq_FMLh9q-yqotnyaJobieD-Vz9wWlHa9J5I1smHURhGMaeAsTjjYEJhmDwjw65vD7NiWHp37ubw1Semb_vAsa_jK8Wf8wKmhUlrMwcNmhZvEEXqABseop8vTQK4ljjx78bxivrX7FR8L0G1sKqWE6nnBgchXPQXDGRnjW9djykEjSGZ5WGnZHlEpN-LIIufgwA_kqyT9hlEIcc-I0jGuw8MFjzWlvecbCprwgOc1y1uLe-N886wIGA7oDVhBHOhVmpgdww2Ml5D9_ZejPusJ0c3WsdcZKaMgIS9erbckdUzMffWK0frTCa1wBLvojN5tgqms_zGcuyIuU2UysS0FSZPadOpTMhYi2NfRWV5RBCThMSygGxh8kPfBbUKH3o33kD1-RM28n685B7XoDmkiaFR4ETB1O0Qj1x_9hei7mkmc86eNXcoX3eaiWXUOuxfiV4sIgD8hUqdIab5k_MUQfXK294TkU1IRgk_MKOUlWh_rM9eDLResfdOaSZcGZ5GZdM8sSXFNrzg2z3qjl7OlK_zz8zDXfwexpPtt_YxbV1ZLUtEwJo3DvE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date\" : \"2011-01-20\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/gameStatistics/bydate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"gameStatistics",
+						"bydate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Game play Statistics by Date Range",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZjM1NjAzZDhlNzBhMjUwMDA5NzMyNzFlYzZkYTJkN2NhZjQ3YzQ0NTdlYTE2ZTRjOGYxN2RiZmRiZmY1OTRiZWQ4ODIzMGY3MjE4YmM3ZGIiLCJpYXQiOjE2MTEwNTc1NzAsIm5iZiI6MTYxMTA1NzU3MCwiZXhwIjoxNjQyNTkzNTY5LCJzdWIiOiIxOCIsInNjb3BlcyI6W119.ga2LhAdDIES71gO3iVRQ9zR_NWaaoOVWCLCYhb5STRTL5cCSLVDuRLdeu_GJ8UPcbS6w7Fwz7y2aaYgREKCZGAiAEB0bR4RwpNTeElgQZEEprey-NKYDmq_FMLh9q-yqotnyaJobieD-Vz9wWlHa9J5I1smHURhGMaeAsTjjYEJhmDwjw65vD7NiWHp37ubw1Semb_vAsa_jK8Wf8wKmhUlrMwcNmhZvEEXqABseop8vTQK4ljjx78bxivrX7FR8L0G1sKqWE6nnBgchXPQXDGRnjW9djykEjSGZ5WGnZHlEpN-LIIufgwA_kqyT9hlEIcc-I0jGuw8MFjzWlvecbCprwgOc1y1uLe-N886wIGA7oDVhBHOhVmpgdww2Ml5D9_ZejPusJ0c3WsdcZKaMgIS9erbckdUzMffWK0frTCa1wBLvojN5tgqms_zGcuyIuU2UysS0FSZPadOpTMhYi2NfRWV5RBCThMSygGxh8kPfBbUKH3o33kD1-RM28n685B7XoDmkiaFR4ETB1O0Qj1x_9hei7mkmc86eNXcoX3eaiWXUOuxfiV4sIgD8hUqdIab5k_MUQfXK294TkU1IRgk_MKOUlWh_rM9eDLResfdOaSZcGZ5GZdM8sSXFNrzg2z3qjl7OlK_zz8zDXfwexpPtt_YxbV1ZLUtEwJo3DvE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"start_date\" : \"2010-01-20\",\n    \"end_date\" : \"2011-01-22\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/gameStatistics/bydateRange",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"gameStatistics",
+						"bydateRange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Game play Statistics  top100 bymonth",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZjM1NjAzZDhlNzBhMjUwMDA5NzMyNzFlYzZkYTJkN2NhZjQ3YzQ0NTdlYTE2ZTRjOGYxN2RiZmRiZmY1OTRiZWQ4ODIzMGY3MjE4YmM3ZGIiLCJpYXQiOjE2MTEwNTc1NzAsIm5iZiI6MTYxMTA1NzU3MCwiZXhwIjoxNjQyNTkzNTY5LCJzdWIiOiIxOCIsInNjb3BlcyI6W119.ga2LhAdDIES71gO3iVRQ9zR_NWaaoOVWCLCYhb5STRTL5cCSLVDuRLdeu_GJ8UPcbS6w7Fwz7y2aaYgREKCZGAiAEB0bR4RwpNTeElgQZEEprey-NKYDmq_FMLh9q-yqotnyaJobieD-Vz9wWlHa9J5I1smHURhGMaeAsTjjYEJhmDwjw65vD7NiWHp37ubw1Semb_vAsa_jK8Wf8wKmhUlrMwcNmhZvEEXqABseop8vTQK4ljjx78bxivrX7FR8L0G1sKqWE6nnBgchXPQXDGRnjW9djykEjSGZ5WGnZHlEpN-LIIufgwA_kqyT9hlEIcc-I0jGuw8MFjzWlvecbCprwgOc1y1uLe-N886wIGA7oDVhBHOhVmpgdww2Ml5D9_ZejPusJ0c3WsdcZKaMgIS9erbckdUzMffWK0frTCa1wBLvojN5tgqms_zGcuyIuU2UysS0FSZPadOpTMhYi2NfRWV5RBCThMSygGxh8kPfBbUKH3o33kD1-RM28n685B7XoDmkiaFR4ETB1O0Qj1x_9hei7mkmc86eNXcoX3eaiWXUOuxfiV4sIgD8hUqdIab5k_MUQfXK294TkU1IRgk_MKOUlWh_rM9eDLResfdOaSZcGZ5GZdM8sSXFNrzg2z3qjl7OlK_zz8zDXfwexpPtt_YxbV1ZLUtEwJo3DvE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"start_date\" : \"2010-01-20\",\n    \"end_date\" : \"2011-01-22\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/gameStatistics/top100bymonth",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"gameStatistics",
+						"top100bymonth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get top player Games for the month",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZjM1NjAzZDhlNzBhMjUwMDA5NzMyNzFlYzZkYTJkN2NhZjQ3YzQ0NTdlYTE2ZTRjOGYxN2RiZmRiZmY1OTRiZWQ4ODIzMGY3MjE4YmM3ZGIiLCJpYXQiOjE2MTEwNTc1NzAsIm5iZiI6MTYxMTA1NzU3MCwiZXhwIjoxNjQyNTkzNTY5LCJzdWIiOiIxOCIsInNjb3BlcyI6W119.ga2LhAdDIES71gO3iVRQ9zR_NWaaoOVWCLCYhb5STRTL5cCSLVDuRLdeu_GJ8UPcbS6w7Fwz7y2aaYgREKCZGAiAEB0bR4RwpNTeElgQZEEprey-NKYDmq_FMLh9q-yqotnyaJobieD-Vz9wWlHa9J5I1smHURhGMaeAsTjjYEJhmDwjw65vD7NiWHp37ubw1Semb_vAsa_jK8Wf8wKmhUlrMwcNmhZvEEXqABseop8vTQK4ljjx78bxivrX7FR8L0G1sKqWE6nnBgchXPQXDGRnjW9djykEjSGZ5WGnZHlEpN-LIIufgwA_kqyT9hlEIcc-I0jGuw8MFjzWlvecbCprwgOc1y1uLe-N886wIGA7oDVhBHOhVmpgdww2Ml5D9_ZejPusJ0c3WsdcZKaMgIS9erbckdUzMffWK0frTCa1wBLvojN5tgqms_zGcuyIuU2UysS0FSZPadOpTMhYi2NfRWV5RBCThMSygGxh8kPfBbUKH3o33kD1-RM28n685B7XoDmkiaFR4ETB1O0Qj1x_9hei7mkmc86eNXcoX3eaiWXUOuxfiV4sIgD8hUqdIab5k_MUQfXK294TkU1IRgk_MKOUlWh_rM9eDLResfdOaSZcGZ5GZdM8sSXFNrzg2z3qjl7OlK_zz8zDXfwexpPtt_YxbV1ZLUtEwJo3DvE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"start_date\" : \"2010-01-20\",\n    \"end_date\" : \"2011-01-22\"\n}"
+				},
+				"url": {
+					"raw": "https://iconet.empireklassic.com/api/gameStatistics/top100bymonth",
+					"protocol": "https",
+					"host": [
+						"iconet",
+						"empireklassic",
+						"com"
+					],
+					"path": [
+						"api",
+						"gameStatistics",
+						"top100bymonth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
