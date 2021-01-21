@@ -3,7 +3,7 @@
 
 // clone the application form github
 
-git clone linktogithubrepo.com/ projectName
+git clone https://github.com/samtechelectronics/assessment.git
 
 // CD into the project folder
 cd p
